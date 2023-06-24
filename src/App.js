@@ -74,6 +74,9 @@ const App = () => {
         (position) => {
           setLat(position.coords.latitude);
           setLng(position.coords.longitude);
+        
+        console.log(lat)
+        console.log(lng)
         },
         (error) => {
           console.error('Error obtaining geolocation:', error);
@@ -90,7 +93,7 @@ const App = () => {
 
   return (
     <div>
-      {lat !== 0 ? (
+      {lat !== 0 ? ( 
         <MapContainer center={position} zoom={zoom} id="mapid" ref={mapRef}>
           <TileLayer
             attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
