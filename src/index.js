@@ -4,12 +4,15 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import App from './PruebaUbiAdress';
+import App from './App';
+import App2 from './PruebaUbiAdress';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App />i
+    <App2 />
   </React.StrictMode>
 );
 
