@@ -93,7 +93,9 @@ const App = () => {
 
   return (
     <div>
-      {lat !== 0 ? ( 
+      {lat !== 0 ? (
+      <div>
+        <p>{position}</p>
         <MapContainer center={position} zoom={zoom} id="mapid" ref={mapRef}>
           <TileLayer
             attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
@@ -101,6 +103,7 @@ const App = () => {
           />
           {lat && lng && <Marker position={position} />}
         </MapContainer>
+      </div>
       ) : (
         ''
       )}
